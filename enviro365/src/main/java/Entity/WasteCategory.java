@@ -16,7 +16,7 @@ import java.util.List;
 public class WasteCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "Category name is required")
     @Size(max = 100, message = "Category name must not exceed 100 characters")
@@ -28,8 +28,8 @@ public class WasteCategory {
     private String recyclingTip;
 
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public String getDescription() { return description; }
