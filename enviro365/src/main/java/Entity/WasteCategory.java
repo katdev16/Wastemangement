@@ -13,7 +13,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "waste_categories")
-class WasteCategory {
+public class WasteCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
