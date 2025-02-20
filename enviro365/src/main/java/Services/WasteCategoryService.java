@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @Validated
-class WasteCategoryService {
+public class WasteCategoryService {
     @Autowired
     private WasteCategoryRepository repository;
 
