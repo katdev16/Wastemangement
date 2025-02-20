@@ -25,6 +25,8 @@ public class WasteCategory {
     @NotBlank(message = "Description is required")
     private String description;
 
+    private String disposalGuideline;
+
     private String recyclingTip;
 
 
@@ -36,4 +38,7 @@ public class WasteCategory {
     public void setDescription(String description) { this.description = description; }
     public String getRecyclingTip() { return recyclingTip; }
     public void setRecyclingTip(String recyclingTip) { this.recyclingTip = recyclingTip; }
+    public String getDisposalGuideline() { return disposalGuideline; }
+    public void setDisposalGuideline(String disposalGuideline) { this.disposalGuideline = disposalGuideline; }
+
 }

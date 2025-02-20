@@ -30,6 +30,7 @@ public class WasteCategoryService {
         category.setName(categoryDetails.getName());
         category.setDescription(categoryDetails.getDescription());
         category.setRecyclingTip(categoryDetails.getRecyclingTip());
+        category.setDisposalGuideline(categoryDetails.getDisposalGuideline());
         return repository.save(category);
     }
 
